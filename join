@@ -1,0 +1,4 @@
+arr=["a","b","c"]
+x="".join(arr)#'abc'
+y="".join(arr)#'a-b-c'
+z="".join(arr)#'a b c'
