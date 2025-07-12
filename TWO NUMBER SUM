@@ -1,0 +1,33 @@
+
+SUM TWO NUMBERS USING LINKED LLIST
+Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        s1=""
+        while l1 !=None:
+            s1=str(l1.val)+s1
+            l1=l1.next
+        s2=""
+        while l2 !=None:
+            s2=str(l2.val)+s2
+            l2=l2.next
+        a=int(s1)
+        b=int(s2)
+        n3=a+b
+        if n3==0;
+           return ListNode(0)
+
+        l3=ListNode(-1)
+        prev=l3
+        while n3>0:
+            d=n3%10
+            node=ListNode(d)
+            prev.next=node
+            prev=node
+            n3=n3
+        return l3.next
+        
