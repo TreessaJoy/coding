@@ -1,0 +1,29 @@
+DESIGN A LINKEDLIST END
+
+def main():
+    head=None
+    head=addLast(head,10)
+    head=addLast(head,20)
+    head=addLast(head,30)
+    
+    printlist(head)
+def printlist(head):
+  while head!=None:
+    print(head.val)
+    head=head.next
+def addLast(head,val):
+  node=ListNode(val)
+  if head==None:
+    head=node
+  else:
+    while head.next!=None:
+      head=head.next
+    head.next=node
+  return head
+    
+class ListNode:
+  def __init__(self,val):
+    self.val=val
+    self.next=None
+if __name__=="__main__":
+  main()
